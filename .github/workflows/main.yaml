@@ -80,7 +80,7 @@ jobs:
           echo "Flash zip using recovery" >> $GITHUB_STEP_SUMMARY
 
       - name: "Upload AnyKernel3 image"
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: success()
         with:
           name: "AnyKernel3"
